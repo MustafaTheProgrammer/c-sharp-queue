@@ -8,13 +8,15 @@ namespace Queue
         {
             Queue<int> myQ = new Queue<int>();
 
-            myQ.Enqueue(0);
-            myQ.Enqueue(45);
-            myQ.Enqueue(17);
+            myQ.Enqueue(0); //this will be first
+            myQ.Enqueue(45); //this is behind 0
+            myQ.Enqueue(17); //this is behind 45
+
+            myQ.Dequeue(); //so now 0 is be removed
 
             foreach (int i in myQ)
             {
-            Console.WriteLine(i)
+                Console.WriteLine(i);
             }
         }
     }
